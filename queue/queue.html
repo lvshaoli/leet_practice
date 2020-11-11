@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="module">
+        import Queue from './Queue.js'
+        const queue = new Queue();
+        queue.enQueue(1);
+		queue.enQueue(2);
+		queue.enQueue(3);
+		queue.enQueue(4);
+		console.log("top: " + queue.top());
+		console.log("size: " + queue.size());
+		while(!queue.isEmpty()){
+			console.log(queue.deQueue());
+		}
+    </script>
+</body>
+</html>

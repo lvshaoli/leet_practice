@@ -6,15 +6,48 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="./linked/LinkedList.js"></script>
-    
-    <script>
-        let list = new LinkedList()
+    <!-- <script src="./linked/LinkedList.js"></script>
+    <script src="./linked//ArrayList.js"></script> -->
+    <!-- <script type="module">
+      import ParseLinkedList from './linked/parseLinkedList.js'
+      let list = new ParseLinkedList()
+      list.add('1')
+      list.add('2')
+      list.add('3')
+      list.add('4')
 
-        list.add('foo')
-        list.add('bar')
-        list.add('add')
+      // list.remove(1)
+      console.log(list.clear())
+      console.log('****', list.toString())
+    </script> -->
+    <script type="module">
+        import SingleCircleLinkedList from './linked/SingleCircleLinkedList.js'
+        let list = new SingleCircleLinkedList();
+        list.add(0, 'ww')
+        list.add(0, 'gg')
+        list.add(1, 'aasd')
+        console.log(list.indexOf('ww'))
         console.log(list.toString())
+    </script>
+    <script>
+
+
+        // let list = new LinkedList()
+
+        // list.add('foo')
+        // list.add('bar')
+        // list.add('add')
+        // console.log(list.toString())
+        // let list = new ArrayList()
+        // list.add(0, 123)
+        // list.add(1, 2)
+        // list.add(2, 3)
+        // list.add(3, 51)
+        // // console.log(list.remove(0))
+
+        // console.log(list.indexOf(null));
+        // console.log('*******************'.substring())
+        // console.log(list.toString())
     </script>
 </body>
 </html>
